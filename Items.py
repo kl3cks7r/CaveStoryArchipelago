@@ -9,8 +9,8 @@ class CaveStoryItemData:
     classification: ItemClassification
     item_id: Optional[int]
     cnt: int
-    def __init__(self, classification: ItemClassification,
-                 item_id: Optional[int], cnt: int = 1):
+
+    def __init__(self, classification: ItemClassification, item_id: Optional[int], cnt: int = 1):
         self.classification = classification
         self.item_id = item_id
         self.cnt = cnt
@@ -19,8 +19,7 @@ class CaveStoryItemData:
 class CaveStoryItem(Item):
     game = "Cave Story"
 
-    def __init__(self, name: str, classification: ItemClassification,
-                 item_id: Optional[int], player: int):
+    def __init__(self, name: str, classification: ItemClassification, item_id: Optional[int], player: int):
         super().__init__(name, classification, item_id, player)
 
 

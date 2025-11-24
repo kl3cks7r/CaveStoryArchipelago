@@ -1,0 +1,1330 @@
+[
+  {
+    "name": "First Cave",
+    "color": "#52667C",
+    "access_rules": [ "sSpawnStartPoint", "flight,weaponSN,@Mimiga Village" ],
+    "chest_unopened_img": "images/chest.png",
+    "chest_opened_img": "images/chestopen.png",
+
+    "children": [
+      {
+        "name": "First Cave",
+        "group": "First Cave",
+
+        "children": [
+          {
+            "name": "First Cave",
+            "short_name": "First Cave",
+            "map_locations": [
+              {
+                "map": "mimigavillage",
+                "x": 126,
+                "y": 96
+              }
+            ],
+            "sections": [
+              {
+                "name": "Game Start",
+                "item_count": 2
+              },
+              {
+                "name": "Gunsmith Upgrade",
+                "access_rules": [ "polarstar,flight,bossCore" ],
+                "item_count": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mimiga Village",
+    "color": "#3163AD",
+    "access_rules": [ "sSpawnStartPoint,weaponSN", "$canEnterArthurs,arthursKey" ],
+    "chest_unopened_img": "images/chest.png",
+    "chest_opened_img": "images/chestopen.png",
+
+    "children": [
+      {
+        "name": "Mimiga Village",
+        "group": "Mimiga Village",
+
+        "children": [
+          {
+            "name": "Yamashita Farm",
+            "short_name": "Plant",
+            "map_locations": [
+              {
+                "map": "mimigavillage",
+                "x": 720,
+                "y": 335
+              }
+            ],
+            "sections": [
+              {
+                "name": "Farm Capsule",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Reservoir",
+            "short_name": "Pool",
+            "map_locations": [
+              {
+                "map": "mimigavillage",
+                "x": 14,
+                "y": 608
+              }
+            ],
+            "sections": [
+              {
+                "name": "Don't kill Chinfish",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Map Chest",
+            "short_name": "Map",
+            "map_locations": [
+              {
+                "map": "mimigavillage",
+                "x": 780,
+                "y": 652
+              }
+            ],
+            "sections": [
+              {
+                "name": "Something's written here...",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Assembly Hall",
+            "short_name": "Comu",
+            "map_locations": [
+              {
+                "map": "mimigavillage",
+                "x": 686,
+                "y": 545
+              }
+            ],
+            "sections": [
+              {
+                "name": "Fireplace",
+                "access_rules": [ "juice" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Graveyard",
+            "short_name": "Cemet",
+            "access_rules": [ "weaponSN,locket" ],
+
+            "map_locations": [
+              {
+                "map": "mimigavillage",
+                "x": 895,
+                "y": 528
+              }
+            ],
+            "sections": [
+              {
+                "name": "Arthur's Grave",
+                "item_count": 1
+              },
+              {
+                "name": "Mushroom Badge",
+                "access_rules": [ "eventCurly,flight" ],
+                "item_count": 1
+              },
+              {
+                "name": "Ma Pignon",
+                "access_rules": [ "flight,$canFightMaPignon" ],
+                "item_count": 1
+              },
+              {
+                "name": "Ma Pignon (Boss)",
+                "access_rules": [ "flight,$canFightMaPignon" ],
+                "hosted_item": "bossMaPignon"
+              },
+              {
+                "name": "Mr Little",
+                "access_rules": [ "$canAccessPlantation,flight" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Arthur's House",
+            "short_name": "Arthur",
+            "access_rules": [ "$canEnterArthurs" ],
+
+            "map_locations": [
+              {
+                "map": "mimigavillage",
+                "x": 254,
+                "y": 849
+              }
+            ],
+            "sections": [
+              {
+                "name": "Professor Booster",
+                "access_rules": [ "bossCore" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Shack",
+            "short_name": "Shack",
+            "access_rules": [ "silverLocket,weaponBoss" ],
+
+            "map_locations": [
+              {
+                "map": "mimigavillage",
+                "x": 670,
+                "y": 830
+              }
+            ],
+            "sections": [
+              {
+                "name": "Balrog 1",
+                "hosted_item": "bossBalrog1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Egg Corridor",
+    "chest_unopened_img": "images/chest.png",
+    "chest_opened_img": "images/chestopen.png",
+    "access_rules": [ "$canEnterArthurs" ],
+
+    "children": [
+      {
+        "name": "Egg Corridor",
+        "group": "Egg Corridor",
+        "color": "#DEEAE1",
+
+        "children": [
+          {
+            "name": "Basil Spot",
+            "short_name": "Basil",
+            "map_locations": [
+              {
+                "map": "egg1",
+                "x": 230,
+                "y": 183
+              }
+            ],
+            "sections": [
+              {
+                "name": "Basil Spot",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Cthulhu's Abode",
+            "short_name": "Cthulhu",
+            "map_locations": [
+              {
+                "map": "egg1",
+                "x": 1821,
+                "y": 32
+              }
+            ],
+            "sections": [
+              {
+                "name": "Cthulhu's Abode",
+                "access_rules": [ "[weaponSN]", "flight", "sSequence,sCthulhu"],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Egg Chest",
+            "short_name": "Egg",
+            "map_locations": [
+              {
+                "map": "egg1",
+                "x": 460,
+                "y": 398
+              }
+            ],
+            "sections": [
+              {
+                "name": "Egg Chest",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Egg Observation Room Chest",
+            "short_name": "Observation Room",
+            "map_locations": [
+              {
+                "map": "egg1",
+                "x": 1087,
+                "y": 352
+              }
+            ],
+            "sections": [
+              {
+                "name": "Ride the Elevator",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Egg no. 0",
+            "short_name": "Egg no. 0",
+            "access_rules": [ "idCard,weaponBoss" ],
+            "map_locations": [
+              {
+                "map": "egg1",
+                "x": 2223,
+                "y": 368
+              }
+            ],
+            "sections": [
+              {
+                "name": "Saved Sue",
+                "hosted_item": "eventSue"
+              },
+              {
+                "name": "Igor",
+                "hosted_item": "bossIgor"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Egg Corridor?",
+        "group": "Egg Corridor",
+        "color": "#798E84",
+        "access_rules": [ "bossCore", "eventKazuma" ],
+
+        "children": [
+          {
+            "name": "Dragon Chest",
+            "short_name": "Dragon",
+            "map_locations": [
+              {
+                "map": "egg2",
+                "x": 1376,
+                "y": 184
+              }
+            ],
+            "sections": [
+              {
+                "name": "Dragon Chest",
+                "access_rules": [ "bossCore", "weaponSN" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Egg Observation Room?",
+            "short_name": "Sisters",
+            "map_locations": [
+              {
+                "map": "egg2",
+                "x": 1015,
+                "y": 303
+              },
+              {
+                "map": "egg2",
+                "x": 1192,
+                "y": 334
+              }
+            ],
+            "sections": [
+              {
+                "name": "Sisters Chest",
+                "access_rules": [ "weaponBoss", "[weaponBoss],flight", "sSequence,sSisters,flight" ],
+                "item_count": 1
+              },
+              {
+                "name": "Sisters Boss",
+                "access_rules": [ "weaponBoss" ],
+                "hosted_item": "bossSisters"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Outer Wall",
+        "group": "Egg Corridor",
+        "color": "#5365A0",
+        "access_rules": [ "$canAccessPlantation" ],
+
+        "children": [
+          {
+            "name": "Clock Room",
+            "short_name": "Clock",
+            "map_locations": [
+              {
+                "map": "outerwall",
+                "x": 127,
+                "y": 88
+              }
+            ],
+            "sections": [
+              {
+                "name": "Clock Room",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Little House",
+            "short_name": "Little",
+            "map_locations": [
+              {
+                "map": "outerwall",
+                "x": 30,
+                "y": 920
+              }
+            ],
+            "sections": [
+              {
+                "name": "Little House",
+                "access_rules": [ "mrLittle,blade" ],
+                "item_count": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Grasstown",
+    "color": "#2D733E",
+    "chest_unopened_img": "images/chest.png",
+    "chest_opened_img": "images/chestopen.png",
+
+    "children": [
+      {
+        "name": "Grasstown West",
+        "group": "Grasstown",
+        "access_rules": [ "$canEnterArthurs" ],
+
+        "children": [
+          {
+            "name": "West Grasstown Floor",
+            "short_name": "Weed Floor",
+            "map_locations": [
+              {
+                "map": "grasstown",
+                "x": 863,
+                "y": 224
+              }
+            ],
+            "sections": [
+              {
+                "name": "West Grasstown Floor",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "West Grasstown Ceiling",
+            "short_name": "Weed Ceiling",
+            "map_locations": [
+              {
+                "map": "grasstown",
+                "x": 990,
+                "y": 15
+              }
+            ],
+            "sections": [
+              {
+                "name": "West Grasstown Ceiling",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Santa's House",
+            "short_name": "Santa",
+            "access_rules": [ "santasKey" ],
+            "map_locations": [
+              {
+                "map": "grasstown",
+                "x": 62,
+                "y": 193
+              }
+            ],
+            "sections": [
+              {
+                "name": "Santa",
+                "item_count": 1
+              },
+              {
+                "name": "Santa's Fireplace",
+                "access_rules": [ "juice" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Chaco's House",
+            "short_name": "Chaco",
+            "access_rules": [ "santasKey" ],
+            "map_locations": [
+              {
+                "map": "grasstown",
+                "x": 1902,
+                "y": 272
+              }
+            ],
+            "sections": [
+              {
+                "name": "Take a Nap",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Kulala Chest",
+            "short_name": "Kulala",
+            "access_rules": [ "santasKey" ],
+            "map_locations": [
+              {
+                "map": "grasstown",
+                "x": 863,
+                "y": 32
+              }
+            ],
+            "sections": [
+              {
+                "name": "Aim for the big sucker!",
+                "item_count": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grasstown East",
+        "group": "Grasstown",
+        "access_rules": [ "[juice]", "flight", "$canAccessPlantation,bomb", "sSequence,sChaco,[weapon]", "sSequence,sChacoPax" ],
+
+        "children": [
+          {
+            "name": "Shelter",
+            "short_name": "Shelter",
+            "map_locations": [
+              {
+                "map": "grasstown",
+                "x": 1325,
+                "y": 605
+              }
+            ],
+            "sections": [
+              {
+                "name": "Crack",
+                "item_count": 1
+              },
+              {
+                "name": "Kazuma Chest",
+                "access_rules": [ "rustyKey" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Saved Kazuma",
+            "short_name": "Saved Kazuma",
+            "map_locations": [
+              {
+                "map": "grasstown",
+                "x": 1261,
+                "y": 605
+              },
+              {
+                "map": "plantation",
+                "x": 133,
+                "y": 783
+              }
+            ],
+            "sections": [
+              {
+                "name": "Saved Kazuma",
+                "access_rules": [ "bomb" ],
+                "hosted_item": "eventKazuma"
+              }
+            ]
+          },
+          {
+            "name": "Execution Chamber",
+            "short_name": "Execution",
+            "map_locations": [
+              {
+                "map": "grasstown",
+                "x": 1519,
+                "y": 623
+              }
+            ],
+            "sections": [
+              {
+                "name": "Execution Chamber",
+                "access_rules": [ "weaponSN" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Grasstown Hut",
+            "short_name": "Hut",
+            "map_locations": [
+              {
+                "map": "grasstown",
+                "x": 1270,
+                "y": 453
+              }
+            ],
+            "sections": [
+              {
+                "name": "Grasstown Hut",
+                "access_rules": [ "[flight]", "rustyKey,weaponBoss", "sSequence,sHut" ],
+                "item_count": 1
+              },
+              {
+                "name": "Outside Hut",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Gum",
+            "short_name": "Gum",
+            "access_rules": [ "gumKey,flight,weaponBoss", "gumKey,rustyKey,weaponBoss" ],
+            "map_locations": [
+              {
+                "map": "grasstown",
+                "x": 2160,
+                "y": 447
+              }
+            ],
+            "sections": [
+              {
+                "name": "Geghrooakk!",
+                "item_count": 1
+              },
+              {
+                "name": "Balfrog",
+                "hosted_item": "bossBalfrog"
+              }
+            ]
+          },
+          {
+            "name": "MALCO",
+            "short_name": "MALCO",
+            "access_rules": [ "rustyKey,weaponBoss" ],
+            "map_locations": [
+              {
+                "map": "grasstown",
+                "x": 530,
+                "y": 623
+              }
+            ],
+            "sections": [
+              {
+                "name": "I'D MAKE YOU SOME TEA, BUT...",
+                "access_rules": [ "juice,charcoal,gumBase" ],
+                "item_count": 1
+              },
+              {
+                "name": "Balrog 2",
+                "hosted_item": "bossBalrog2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sand Zone",
+    "color": "#BCAF7A",
+    "chest_unopened_img": "images/chest.png",
+    "chest_opened_img": "images/chestopen.png",
+
+    "children": [
+      {
+        "name": "Upper Sand Zone",
+        "group": "Sand Zone",
+        "access_rules": [ "$canEnterArthurs,weaponSN" ],
+
+        "children": [
+          {
+            "name": "Sand Zone Residence",
+            "short_name": "Curly's House",
+            "access_rules": [ "weaponBoss" ],
+            "map_locations": [
+              {
+                "map": "sandzone",
+                "x": 46,
+                "y": 191
+              }
+            ],
+            "sections": [
+              {
+                "name": "Curly Trade",
+                "access_rules": [ "polarStar" ],
+                "item_count": 1
+              },
+              {
+                "name": "Curly's Closet",
+                "item_count": 1
+              },
+              {
+                "name": "Puppy (Curly)",
+                "item_count": 1
+              },
+              {
+                "name": "Curly Boss",
+                "hosted_item": "bossCurly"
+              }
+            ]
+          },
+          {
+            "name": "Polish Spot",
+            "short_name": "Polish",
+            "map_locations": [
+              {
+                "map": "sandzone",
+                "x": 1183,
+                "y": 64
+              }
+            ],
+            "sections": [
+              {
+                "name": "Polish Spot",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Omega Arena",
+            "short_name": "Omega",
+            "access_rules": ["weaponBoss"],
+            "map_locations": [
+              {
+                "map": "sandzone",
+                "x": 2335,
+                "y": 200
+              }
+            ],
+            "sections": [
+              {
+                "name": "Omega",
+                "hosted_item": "bossOmega"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lower Sand Zone",
+        "group": "Sand Zone",
+        "access_rules": [ "$canEnterArthurs,weaponBoss", "sSpawnCamp" ],
+
+        "children": [
+          {
+            "name": "Pawprint Spot",
+            "short_name": "Pawprint",
+            "map_locations": [
+              {
+                "map": "sandzone",
+                "x": 1589,
+                "y": 382
+              },
+              {
+                "map": "sandzone",
+                "x": 894,
+                "y": 207
+              }
+            ],
+            "sections": [
+              {
+                "name": "Pawprint Spot",
+                "item_count": 2
+              }
+            ]
+          },
+          {
+            "name": "Deserted House",
+            "short_name": "Dark",
+            "map_locations": [
+              {
+                "map": "sandzone",
+                "x": 1167,
+                "y": 433
+              }
+            ],
+            "sections": [
+              {
+                "name": "Puppy (Dark)",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Sand Zone Floor",
+            "short_name": "Sand Floor",
+            "map_locations": [
+              {
+                "map": "sandzone",
+                "x": 1916,
+                "y": 747
+              }
+            ],
+            "sections": [
+              {
+                "name": "Puppy (Run)",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Sand Zone Storehouse Ledge",
+            "short_name": "Storehouse Ledge",
+            "map_locations": [
+              {
+                "map": "sandzone",
+                "x": 2271,
+                "y": 512
+              }
+            ],
+            "sections": [
+              {
+                "name": "Puppy (Sleep)",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Jenka's House",
+            "short_name": "Jenka",
+            "map_locations": [
+              {
+                "map": "sandzone",
+                "x": 558,
+                "y": 417
+              }
+            ],
+            "sections": [
+              {
+                "name": "Jenka",
+                "access_rules": [ "puppy5" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Sand Zone Storehouse",
+            "short_name": "Storehouse",
+            "access_rules": [ "puppy5" ],
+            "map_locations": [
+              {
+                "map": "sandzone",
+                "x": 2432,
+                "y": 576
+              }
+            ],
+            "sections": [
+              {
+                "name": "Toroko+",
+                "hosted_item": "bossToroko"
+              },
+              {
+                "name": "King",
+                "item_count": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Labyrinth",
+    "color": "#6D5935",
+    "chest_unopened_img": "images/chest.png",
+    "chest_opened_img": "images/chestopen.png",
+
+    "children": [
+      {
+        "name": "Labyrinth B",
+        "group": "Labyrinth",
+        "access_rules": [ "$canEnterArthurs" ],
+        
+        "children": [
+          {
+            "name": "Labyrinth B",
+            "short_name": "Laby B",
+            "map_locations": [
+              {
+                "map": "labyrintheast",
+                "x": 151,
+                "y": 302
+              }
+            ],
+            "sections": [
+              {
+                "name": "Booster Chest",
+                "item_count": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "West Labyrinth",
+        "group": "Labyrinth",
+        "access_rules": [ "bossToroko,weaponBoss", "flight,weaponBoss,$canEnterArthurs", "sSpawnCamp" ],
+
+        "children": [
+          {
+            "name": "Labyrinth I",
+            "short_name": "Laby I",
+            "map_locations": [
+              {
+                "map": "labyrinthwest",
+                "x": 48,
+                "y": 256
+              }
+            ],
+            "sections": [
+              {
+                "name": "Labyrinth I Spot",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Labyrinth Shop",
+            "short_name": "Shop",
+            "map_locations": [
+              {
+                "map": "labyrinthwest",
+                "x": 527,
+                "y": 145
+              }
+            ],
+            "sections": [
+              {
+                "name": "Chaba Chest (Machine Gun)",
+                "access_rules": [ "machineGun" ],
+                "item_count": 1
+              },
+              {
+                "name": "Chaba Chest (Fireball)",
+                "access_rules": [ "fireball" ],
+                "item_count": 1
+              },
+              {
+                "name": "Chaba Chest (Spur)",
+                "access_rules": [ "spur" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Camp",
+            "short_name": "Camp",
+            "map_locations": [
+              {
+                "map": "labyrinthwest",
+                "x": 1343,
+                "y": 242
+              },
+              {
+                "map": "labyrinthwest",
+                "x": 1453,
+                "y": 195
+              }
+            ],
+            "sections": [
+              {
+                "name": "I'm a physician",
+                "item_count": 1
+              },
+              {
+                "name": "Camp Chest",
+                "access_rules": [ "[flight]", "sSequence,sCamp", "sSpawnCamp" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Clinic Ruins",
+            "short_name": "Clinic",
+            "access_rules": [ "clinicKey,weaponBoss" ],
+
+            "map_locations": [
+              {
+                "map": "labyrinthwest",
+                "x": 1055,
+                "y": 65
+              }
+            ],
+            "sections": [
+              {
+                "name": "Ghost in the Clinic",
+                "item_count": 1
+              },
+              {
+                "name": "Puu Black",
+                "hosted_item": "bossPuuBlack"
+              }
+            ]
+          },
+          {
+            "name": "Monster X Arena",
+            "short_name": "Monster X",
+            "access_rules": [ "weaponBoss" ],
+
+            "map_locations": [
+              {
+                "map": "labyrinthwest",
+                "x": 1885,
+                "y": 200
+              }
+            ],
+            "sections": [
+              {
+                "name": "Monster X",
+                "hosted_item": "bossMonsterX"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "East Labyrinth",
+        "group": "Labyrinth",
+        "access_rules": [ "@West Labyrinth,flight", "@West Labyrinth,weaponBoss,cureAll" ],
+
+        "children": [
+          {
+            "name": "Boulder Chamber",
+            "short_name": "Boulder",
+            "access_rules": [ "cureAll,weaponBoss" ],
+
+            "map_locations": [
+              {
+                "map": "labyrintheast",
+                "x": 447,
+                "y": 127
+              }
+            ],
+            "sections": [
+              {
+                "name": "Boulder Chest",
+                "item_count": 1
+              },
+              {
+                "name": "Balrog 3",
+                "hosted_item": "bossBalrog3"
+              }
+            ]
+          },
+          {
+            "name": "Core",
+            "short_name": "Core",
+            "color": "#7B6A83",
+            "access_rules": [ "cureAll,weaponBoss" ],
+            "map_locations": [
+              {
+                "map": "labyrintheast",
+                "x": 1774,
+                "y": 400
+              },
+              {
+                "map": "labyrintheast",
+                "x": 1519,
+                "y": 288
+              },
+              {
+                "map": "labyrintheast",
+                "x": 1822,
+                "y": 226
+              }
+            ],
+            "sections": [
+              {
+                "name": "Robot's Arm",
+                "item_count": 1
+              },
+              {
+                "name": "Drowned Curly",
+                "access_rules": [ "bossCore" ],
+                "item_count": 1
+              },
+              {
+                "name": "Core",
+                "hosted_item": "bossCore"
+              }
+            ]
+          },
+          {
+            "name": "Waterway",
+            "short_name": "Waterway",
+            "color": "#316666",
+            "access_rules": [ "airTank" ],
+            "map_locations": [
+              {
+                "map": "labyrintheast",
+                "x": 448,
+                "y": 369
+              }
+            ],
+            "sections": [
+              {
+                "name": "Drained Curly",
+                "access_rules": [ "bossCore,towRope" ],
+                "hosted_item": "eventCurly"
+              },
+              {
+                "name": "Ironhead Item",
+                "access_rules": [ "weaponBoss" ],
+                "item_count": 1
+              },
+              {
+                "name": "Ironhead Boss",
+                "access_rules": [ "weaponBoss" ],
+                "hosted_item": "bossIronhead"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Plantation",
+    "color": "#2D3A0C",
+    "chest_unopened_img": "images/chest.png",
+    "chest_opened_img": "images/chestopen.png",
+    "access_rules": [ "$canAccessPlantation" ],
+
+    "children": [
+      {
+        "name": "Plantation",
+        "group": "Plantation",
+
+        "children": [
+          {
+            "name": "Kanpachi's Bucket",
+            "short_name": "Kanpachi",
+            "map_locations": [
+              {
+                "map": "plantation",
+                "x": 334,
+                "y": 1663
+              }
+            ],
+            "sections": [
+              {
+                "name": "Gone Fishin'",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Jail no. 1",
+            "short_name": "Jail",
+            "map_locations": [
+              {
+                "map": "plantation",
+                "x": 13,
+                "y": 1647
+              },
+              {
+                "map": "plantation",
+                "x": 1582,
+                "y": 703
+              }
+            ],
+            "sections": [
+              {
+                "name": "KILLER ROBOT!!!",
+                "access_rules": [ "teleportKey" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Momorin's Hideout",
+            "short_name": "Hideout",
+            "map_locations": [
+              {
+                "map": "plantation",
+                "x": 1150,
+                "y": 1343
+              }
+            ],
+            "sections": [
+              {
+                "name": "Chivalry is dead, let me tell you",
+                "access_rules": [ "letter,booster1" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Broken Sprinkler",
+            "short_name": "Sprinkler",
+            "map_locations": [
+              {
+                "map": "plantation",
+                "x": 235,
+                "y": 1103
+              }
+            ],
+            "sections": [
+              {
+                "name": "Broken Sprinkler",
+                "access_rules": [ "mask" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Rest Area",
+            "short_name": "Lounge",
+            "map_locations": [
+              {
+                "map": "plantation",
+                "x": 366,
+                "y": 1312
+              }
+            ],
+            "sections": [
+              {
+                "name": "Megane",
+                "access_rules": [ "brokenSprinkler,mask" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Side Room",
+            "short_name": "Itoh",
+            "map_locations": [
+              {
+                "map": "plantation",
+                "x": 1888,
+                "y": 1327
+              },
+              {
+                "map": "outerwall",
+                "x": 511,
+                "y": 23
+              }
+            ],
+            "sections": [
+              {
+                "name": "Itoh",
+                "access_rules": [ "letter" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Plantation Ceiling",
+            "short_name": "Cent Ceiling",
+            "map_locations": [
+              {
+                "map": "plantation",
+                "x": 284,
+                "y": 529
+              }
+            ],
+            "sections": [
+              {
+                "name": "Platforming Spot",
+                "access_rules": [ "[flight]", "sSequence,sPlantation" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Amnesiac Curly",
+            "short_name": "Cent Curly",
+            "map_locations": [
+              {
+                "map": "plantation",
+                "x": 1757,
+                "y": 1663
+              }
+            ],
+            "sections": [
+              {
+                "name": "Jammed it into Curly's mouth",
+                "access_rules": [ "eventCurly,maPignon" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Plantation Puppy",
+            "short_name": "Plant Pup",
+            "map_locations": [
+              {
+                "map": "plantation",
+                "x": 1120,
+                "y": 704
+              }
+            ],
+            "sections": [
+              {
+                "name": "Plantation Puppy",
+                "access_rules": [ "letter,booster1,controller,sprinkler" ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Last Cave (Hidden)",
+            "short_name": "Last Cave",
+            "color": "#FF0000",
+            "access_rules": [ "letter,booster2,controller,sprinkler,weaponBoss", "sSequence,sRocket,booster2,machineGun" ],
+            "map_locations": [
+              {
+                "map": "plantation",
+                "x": 1274,
+                "y": 144
+              }
+            ],
+            "sections": [
+              {
+                "name": "Red Demon Item",
+                "item_count": 1
+              },
+              {
+                "name": "Red Demon Boss",
+                "hosted_item": "bossRedDemon"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
