@@ -144,7 +144,8 @@ class CaveStoryWorld(World):
                 "Machine Gun",
                 "Nemesis",
                 "Progressive Polar Star",
-                "BubblerMissile Expansion",
+                "Bubbler",
+                "Missile Expansion",
             ]
             initial_state = CollectionState(self.multiworld)
             sphere_1_locs = self.multiworld.get_reachable_locations(initial_state, self.player)
