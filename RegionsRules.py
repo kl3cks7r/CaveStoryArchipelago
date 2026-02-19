@@ -29,7 +29,7 @@ def has_flight(state: CollectionState, player: int):
 
 
 def can_break_blocks(state: CollectionState, player: int):
-    return state.has_any({"Blade", "Machine Gun", "Nemesis", "Progressive Polar Star"}, player)
+    return state.has_any({"Blade", "Machine Gun", "Nemesis", "Progressive Polar Star", "Bubbler", "Missile Expansion"}, player)
 
 
 def can_kill_bosses(state: CollectionState, player: int):
@@ -40,9 +40,8 @@ def can_kill_bosses(state: CollectionState, player: int):
 
 def has_weapon(state: CollectionState, player: int):
     return state.has_any(
-        {"Blade", "Bubbler", "Fireball", "Machine Gun", "Nemesis", "Progressive Polar Star", "Snake"}, player
+        {"Blade", "Bubbler", "Fireball", "Machine Gun", "Nemesis", "Progressive Polar Star", "Snake", "Missile Expansion"}, player
     )
-    # No missile logic yet "Progressive Missile Launcher"
 
 
 def remove_points_of_no_return(state: CollectionState, player: int):
