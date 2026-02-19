@@ -22,11 +22,16 @@ class NoFallingBlocks(Toggle):
     default = False
 
 
-class EarlyWeapon(Toggle):
-    """Ensures a weapon is placed early in your world"""
+class EarlyWeapon(Choice):
+    """Ensures a weapon is placed early in your world. "Good weapons" ensures that the weapon is either the Polar Star, Blade, or Machine Gun. "Annoying" adds weapons that can break blocks but can be aggravating to use - the Nemesis, Bubbler, and Missile Launcher.
+
+    Note that the Bubbler needs to be Level 3 in order to break blocks, which may force early game grinding to progress."""
 
     display_name = "Early Weapon"
-    default = True
+    option_good_weapons = 0
+    option_annoying = 1
+    option_none = 2
+    default = 0
 
 
 class StartingLocation(Choice):
